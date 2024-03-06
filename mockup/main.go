@@ -25,4 +25,15 @@ func main() {
 	fmt.Println(multiply)
 	divide := divideArray(arr)
 	fmt.Println(divide)
+
+	/*
+		todo step math operation:
+		contoh: 1 + 3 * 4
+		-cari prioritasnya, misal kali dulu baru tambah
+		-untuk bagi dan kali (prioritas) gunakan
+		 function multiplyArray dan divideArray lalu dikurang atau ditambahkan,
+		 gunakan sorting untuk menentukan prioritas
+		-gunakan paralelisme pada operasi prioritas (kali dan bagi),
+		 gunakan serialisme pada operasi non-prioritas (tambah dan kurang)
+	*/
 }

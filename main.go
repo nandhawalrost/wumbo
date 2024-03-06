@@ -27,35 +27,7 @@ func ReadFile(name string, extension string) {
 	fmt.Printf("Output:")
 	fmt.Println()
 
-	// var int_type_variable []string
-	// var int_type_value []string
-
 	length_of_syntax := len(InstructionParser(text))
-	// for i := 0; i < length_of_syntax; i++ {
-	// 	output := TrimOutFunction((InstructionParser(text)[i]))
-
-	// 	// output function detector
-	// 	if strings.Contains(InstructionParser(text)[i], "out") && strings.Contains(InstructionParser(text)[i], "('") && strings.Contains(InstructionParser(text)[i], "')") {
-	// 		fmt.Print(output, "\n")
-	// 	}
-
-	// 	// type integer detector
-	// 	if strings.Contains(InstructionParser(text)[i], "int") {
-	// 		int_type_variable = append(int_type_variable, GetIntVar(output)[1])
-	// 		int_type_value = append(int_type_value, TrimIntType(output))
-	// 	}
-
-	// 	// output integer detector
-	// 	if strings.Contains(InstructionParser(text)[i], "out") && !strings.Contains(InstructionParser(text)[i], "'") {
-	// 		// fmt.Println(strings.Contains(output, "a"))
-	// 		for find := 0; find < len(int_type_variable); find++ {
-	// 			if strings.Contains(int_type_variable[find], string(output[1])) { //bug (output)
-	// 				fmt.Println(int_type_value[find])
-	// 			}
-	// 		}
-	// 	}
-
-	// }
 	detector.DetectLine(text, length_of_syntax, InstructionParser(text))
 }
 
