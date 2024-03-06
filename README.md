@@ -6,7 +6,7 @@ Experimental project for studying how interpreter and programming language works
 
 
 
-<img src="https://pbs.twimg.com/media/COf5U3uW8AA9do4.jpg" width="400" height="790">
+<img src="https://pbs.twimg.com/media/COf5U3uW8AA9do4.jpg" width="100" height="100">
 
 
 ## Features
@@ -24,4 +24,10 @@ out('Hello World!');
 ```sh
 int x = 3;
 out(x);
+```
+
+## Math Operation
+
+```sh
+Work in progress..
 ```
