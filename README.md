@@ -6,7 +6,7 @@ Experimental project for studying how interpreter and programming language works
 
 
 
-![Logo](https://media.tenor.com/eFxksYT-C4oAAAAe/spongebob-patrick.png)
+<img src="https://pbs.twimg.com/media/COf5U3uW8AA9do4.jpg" width="400" height="790">
 
 
 ## Features
@@ -14,8 +14,14 @@ Experimental project for studying how interpreter and programming language works
 - Print out string
 - Print out integer variable
 
-## Helloworld
+## Hello World
 
+```sh
 out('Hello World!');
+```
+## Variable
 
-
+```sh
+int x = 3;
+out(x);
+```
