@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"regexp"
+	"strings"
+)
 
-//math operation mockup
+// math operation mockup
 func multiplyArray(arr []int) int {
 	product := 1
 	for _, num := range arr {
@@ -19,6 +23,15 @@ func divideArray(arr []int) float64 {
 	return quotient
 }
 
+func extractNumber(str string) []string {
+	trim_operator := regexp.MustCompile("[*/+-]") // contains kalibataku
+	nums := trim_operator.ReplaceAllString(str, "-")
+
+	array := strings.Split(nums, "-")
+
+	return array
+}
+
 func main() {
 	arr := []int{1, 2, 3}
 	multiply := multiplyArray(arr)
@@ -26,6 +39,7 @@ func main() {
 	divide := divideArray(arr)
 	fmt.Println(divide)
 
+	fmt.Println(extractNumber("1+22*3"))
 	/*
 		todo step math operation:
 		contoh: 1 + 3 * 4
